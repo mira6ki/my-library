@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<catalog>
+	<book id="bk101">
+		<author>Автор 12</author>
+		<name>Още една книга на автор 12</name>
+		<date>01.03.1991</date>
+	</book>
+	<book id="bk102">
+		<author>Автор 12</author>
+		<name>Книга на автор 12</name>
+		<date>13.02.2021</date>
+	</book>
+	<book id="bk102">
+		<author>Автор 11</author>
+		<name>Книга на автор 11</name>
+		<date>01.02.2024</date>
+	</book>
+</catalog>

@@ -1,0 +1,2 @@
+# Run the PHP file every 6 hours
+0 */6 * * * php /C/xampp/htdocs/src/Crontab/crontab.php

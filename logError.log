@@ -1,0 +1,52 @@
+[2024-04-24 17:02:57] Exception: DateTime::__construct(): Failed to parse time string (13.13.2013) at position 8 (1): Unexpected character
+File: C:\xampp\htdocs\src\Service\XmlService.php
+Line: 30
+Trace: #0 C:\xampp\htdocs\src\Service\XmlService.php(30): DateTime->__construct('13.13.2013')
+#1 C:\xampp\htdocs\src\Service\XmlService.php(83): Service\XmlService->processXMLData(Object(SimpleXMLElement))
+#2 C:\xampp\htdocs\src\Service\XmlService.php(109): Service\XmlService->processXMLFilePath('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\src\Controller\BooksController.php(75): Service\XmlService->processDirectory('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\src\Router\Router.php(62): Controller\BooksController->uploadFromDirectory()
+#5 C:\xampp\htdocs\src\Router\Router.php(17): Router\Router::callAction('BooksController', 'uploadFromDirec...')
+#6 C:\xampp\htdocs\src\Router\Router.php(66): Router\Router::route()
+#7 {main}
+
+[2024-04-24 17:04:23] Exception: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  invalid input syntax for type date: ""
+CONTEXT:  unnamed portal parameter $2 = ''
+File: C:\xampp\htdocs\src\Traits\Repository\DefaultRepository.php
+Line: 85
+Trace: #0 C:\xampp\htdocs\src\Traits\Repository\DefaultRepository.php(85): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\src\Repository\BookRepository.php(60): Repository\BookRepository->addDatabaseRecord(Array)
+#2 C:\xampp\htdocs\src\Service\XmlService.php(63): Repository\BookRepository->addBook(Array)
+#3 C:\xampp\htdocs\src\Service\XmlService.php(83): Service\XmlService->processXMLData(Object(SimpleXMLElement))
+#4 C:\xampp\htdocs\src\Controller\BooksController.php(56): Service\XmlService->processXMLFilePath('C:\\Users\\mira6\\...')
+#5 C:\xampp\htdocs\src\Router\Router.php(62): Controller\BooksController->uploadBookList()
+#6 C:\xampp\htdocs\src\Router\Router.php(17): Router\Router::callAction('BooksController', 'uploadBooKList')
+#7 C:\xampp\htdocs\src\Router\Router.php(66): Router\Router::route()
+#8 {main}
+
+[2024-04-24 17:09:29] Exception: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  invalid input syntax for type date: ""
+CONTEXT:  unnamed portal parameter $2 = ''
+File: C:\xampp\htdocs\src\Traits\Repository\DefaultRepository.php
+Line: 85
+Trace: #0 C:\xampp\htdocs\src\Traits\Repository\DefaultRepository.php(85): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\src\Repository\BookRepository.php(60): Repository\BookRepository->addDatabaseRecord(Array)
+#2 C:\xampp\htdocs\src\Service\XmlService.php(63): Repository\BookRepository->addBook(Array)
+#3 C:\xampp\htdocs\src\Service\XmlService.php(83): Service\XmlService->processXMLData(Object(SimpleXMLElement))
+#4 C:\xampp\htdocs\src\Controller\BooksController.php(56): Service\XmlService->processXMLFilePath('C:\\Users\\mira6\\...')
+#5 C:\xampp\htdocs\src\Router\Router.php(62): Controller\BooksController->uploadBookList()
+#6 C:\xampp\htdocs\src\Router\Router.php(17): Router\Router::callAction('BooksController', 'uploadBooKList')
+#7 C:\xampp\htdocs\src\Router\Router.php(66): Router\Router::route()
+#8 {main}
+
+[2024-04-24 17:17:19] Exception: DateTime::__construct(): Failed to parse time string (13.13.2013) at position 8 (1): Unexpected character
+File: C:\xampp\htdocs\src\Service\XmlService.php
+Line: 30
+Trace: #0 C:\xampp\htdocs\src\Service\XmlService.php(30): DateTime->__construct('13.13.2013')
+#1 C:\xampp\htdocs\src\Service\XmlService.php(83): Service\XmlService->processXMLData(Object(SimpleXMLElement))
+#2 C:\xampp\htdocs\src\Service\XmlService.php(109): Service\XmlService->processXMLFilePath('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\src\Controller\BooksController.php(75): Service\XmlService->processDirectory('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\src\Router\Router.php(62): Controller\BooksController->uploadFromDirectory()
+#5 C:\xampp\htdocs\src\Router\Router.php(17): Router\Router::callAction('BooksController', 'uploadFromDirec...')
+#6 C:\xampp\htdocs\src\Router\Router.php(66): Router\Router::route()
+#7 {main}
+
